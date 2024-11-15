@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+<title>Песни</title> 
+{% endblock %} 
+
+{% block container %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>{{ mytext }}</h1>
+            <p class="lead"><strong>Это мои любимые песни</strong></p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+            <ul class="list-group">
+                {% for song in search_list %} 
+                    <li class="list-group-item">{{ song }}</li> 
+                {% endfor %} 
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4 offset-md-4 text-center">
+            <img src="https://avatars.mds.yandex.net/i?id=1e472d166d23294590efd4160b4757bd697f1a1284da267e-12498226-images-thumbs&n=13" alt="Музыка" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+{% endblock %}

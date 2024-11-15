@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Галерея изображений</title>
+{% endblock %}
+
+{% block container %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Галерея изображений</h1>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg/800px-Claude_Monet%2C_Impression%2C_soleil_levant.jpg" alt="Изображение 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="https://i.pinimg.com/736x/a7/0e/6d/a70e6d396f86f6b275fa8d95743a2b53.jpg" alt="Изображение 2" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="https://www.artwall.ru/files/products/poster_p-100550.jpg" alt="Изображение 3" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="https://www.artwall.ru/files/products/poster_p-26888.jpg" alt="Изображение 4" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+{% endblock %}

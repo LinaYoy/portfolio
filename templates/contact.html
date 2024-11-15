@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<head><link rel="stylesheet" href="css/bootstrap.min.css"></head>
+<div class="top-pad">
+    <h1>Страница table</h1>
+    <h1>Table</h1>
+    <table>
+        {% for row in data %} 
+        <tr>
+            {% for cell in row %} 
+            <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+{% endblock %}
+
+
+{% block title %}
+<title>Текст</title>
+{% endblock %}
